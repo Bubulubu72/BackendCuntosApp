@@ -60,7 +60,7 @@ async function generateStoryAndImage() {
 }
 
 function eliminarCaracteresEspeciales(cadena) {
-  return cadena.replace(/[^\w\sáéíóúüñ]/gi, '');
+  return cadena.replace(/[^\w\sáéíóúüñ.]/gi, '');
 }
 
 
