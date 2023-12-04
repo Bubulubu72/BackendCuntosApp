@@ -9,7 +9,7 @@ router.get('/google/callback',
   passport.authenticate('google', { failureRedirect: '/'}),
   function(req, res) {
 
-    localStorage.setItem(res)
+    // localStorage.setItem(res)
     console.log(res);
 
     res.redirect('http://localhost:4200/');
