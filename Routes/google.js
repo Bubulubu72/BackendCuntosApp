@@ -10,7 +10,8 @@ router.get('/google/callback',
   function(req, res) {
 
     const user = req.user;
-    console.log(user);
+    //console.log(user);
+    localStorage.setItem('userGoogle', JSON.stringify(user))
 
     res.redirect('http://localhost:4200/');
 })
