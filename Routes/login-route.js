@@ -21,7 +21,7 @@ router.get('/', validarToken, (req, res) => {
 router.post('/', async (req, res) =>{
     let user = await User.getUsersByEmail(req.body.email);
 
-    if (! user){
+    if (!user || user === '' || user === undefined){
         res.status(401).send({error: "Usuario no existente"})
         return
     }
