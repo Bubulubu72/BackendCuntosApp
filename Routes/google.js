@@ -8,8 +8,8 @@ router.get('/google',
 router.get('/google/callback',
   passport.authenticate('google', { failureRedirect: '/'}),
   function(req, res) {
-    const userData = req.user
-    res.send({user: userData})
+    // const userData = req.user
+    // res.send({user: userData})
     res.redirect('http://localhost:4200/');
 })
 
