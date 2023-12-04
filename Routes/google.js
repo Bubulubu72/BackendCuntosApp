@@ -8,7 +8,7 @@ router.get('/google',
 router.get('/google/callback',
   passport.authenticate('google', { failureRedirect: '/'}),
   function(req, res) {
-    res.redirect('http://localhost:4200/home');
+    res.redirect('http://localhost:4200/');
 })
 
 // Ruta protegida que requiere autenticación
