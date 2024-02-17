@@ -31,4 +31,5 @@ function validateIsAdmin(req, res, next){
     next()
 }
 
+
 module.exports = {validateIsAdmin, validarToken}
